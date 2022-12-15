@@ -15,10 +15,21 @@ algorithm:
 
 
 def is_square(no: int) -> bool:
+    """
+    Checks if a number is a square
+    :param no: the number to be checked
+    :return: True if the number is a square, False otherwise
+    """
     return no ** (1 / 2) % 1 == 0
 
 
 def generalized_fermat_algorithm(n: int, bound: int) -> tuple[int, int, int]:
+    """
+    It finds the factorization of an odd number by Fermat's generalized algorithm
+    :param n: the number to be factorized
+    :param bound: a suitable bound
+    :return: if n is even, the tuple (-1, -1, -1), otherwise the initial number n, and the 2 factors that it found
+    """
     if n % 2 == 0:
         print(f'{n} must be an odd number!')
         return -1, -1, -1

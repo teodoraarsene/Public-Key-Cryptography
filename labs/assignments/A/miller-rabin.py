@@ -1,5 +1,5 @@
 import string
-from utils import Style, Formatting
+from assignments.utils import Style, Formatting
 
 
 def is_set(number, n):

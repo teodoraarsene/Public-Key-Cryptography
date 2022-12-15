@@ -37,7 +37,7 @@ def measure_running_time(algo, a, b):
     return result, end_time - start_time
 
 if __name__ == '__main__':
-    inputs = [(10, 15), (270, 192), (72, 12), (3, 5), (98, 56), (36, 60), (2740, 1760), (30, 50), (24, 18), (15, 75)]
+    inputs = [(10, 15), (270, 192), (72, 12), (3, 5), (98, 56), (36, 60), (2740, 1760), (30, 50), (24, 18), (15, 75), (5, 6336)]
 
     for (a, b) in inputs:
         result1, elapsed_time1 = measure_running_time(gcd_division, a, b)
